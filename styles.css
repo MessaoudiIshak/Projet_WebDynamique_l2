@@ -1,0 +1,210 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fde3e3;
+  background-image: url('https://previews.123rf.com/images/peachandplum/peachandplum2007/peachandplum200700006/151929475-mod%C3%A8le-sans-couture-de-p%C3%A9tales-de-fleur-de-cerisier-rose-sakura.jpg');
+  background-size: 30%;
+  background-repeat: repeat;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff66b2;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+}
+
+.film-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.film-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.film-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.film-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.film-details {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.film-card .film-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.view-button{
+  background-color: #ff66b2;
+  color: #fff;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 5px auto;
+  font-size: 0.8rem;
+  position: relative;
+  left: -10px;
+}
+
+.watch-button {
+  background-color: #ff66b2;
+  color: #fff;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 5px auto;
+  font-size: 0.8rem;
+}
+
+.view-button:hover,
+.watch-button:hover {
+  background-color: #e64d87;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: 60vh;
+}
+
+.popup-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.watch-button {
+  background-color: #ff66b2;
+  color: #fff;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-left: 10%;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+}
+
+.watch-button:hover {
+  background-color: #e64d87;
+}
+
+.exit-button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.exit-button:hover {
+  background-color: #d32f2f;
+}

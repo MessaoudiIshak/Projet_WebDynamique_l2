@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fde3e3;
+    background-image: url('https://previews.123rf.com/images/peachandplum/peachandplum2007/peachandplum200700006/151929475-mod%C3%A8le-sans-couture-de-p%C3%A9tales-de-fleur-de-cerisier-rose-sakura.jpg');
+    background-size: 30%;
+    background-repeat: repeat;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff66b2;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+.contact-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.contact-card .film-details {
+    padding: 20px;
+}
+
+.contact-card .film-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-card .film-description {
+    font-size: 1.2rem;
+    color: #555;
+}
