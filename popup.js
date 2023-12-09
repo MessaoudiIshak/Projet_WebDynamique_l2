@@ -40,4 +40,4 @@ function openPopup(title, description, imageUrl) {
     document.body.appendChild(popupContainer);
 }
 
-}
+
